@@ -138,6 +138,7 @@ nav ul li {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+    padding-top: 75px;
 }
 
 .intro .column p {
@@ -145,7 +146,7 @@ nav ul li {
     text-align: justify;
     line-height: 25px;
     font-weight: normal;
-    margin: 4% 20px;
+    margin: 4% 60px;
 }
 .intro .column h3 {
     color: #000000;
@@ -230,10 +231,10 @@ h2 {
     display: grid;
     width: auto;
     text-align: center;
-    margin: 35px 15px;
-    background-color: #FAF8F6;
+    margin: 30px 15px;
+    background-color: #C8BCAE;
     border-radius: 10px;
-    border-bottom: 1px solid #000000;
+   
     box-sizing: border-box;
 }
 
@@ -265,10 +266,11 @@ h2 {
     padding: 20px 0;
     background-color: #ffffff;
     color: #000000;
-    text-transform: uppercase;
+    text-transform: none;
     font-weight: lighter;
-    letter-spacing: 2px;
+    letter-spacing: 1px; /* or a smaller value like -1px */
     border-top-width: 2px;
+    font-size: small;
 }
 
 footer {
@@ -313,17 +315,18 @@ footer {
         margin: 13px 0;/* Combined margins */
     }
 
-    .text_column {
-        width: 100%;
-        text-align: justify;
-        padding: 0;
-    }
+   .text_column {
+    width: 100%;
+    text-align: center;
+    padding: 10px; /* No padding on .text_column */
+}
 
-    .intro .column p {
-        width: 80%;
-        margin-left: 0px;
-        
-    }
+.intro .column p {
+    width: 80%;                /* Keep the width at 80% */
+    margin: 0 auto;           /* Center the paragraph */
+    padding: 0 10%;           /* Add equal horizontal padding */
+    text-align: justify;       /* Justify text for a neat look */
+}
 
       .gallery {
         width: 100%;
